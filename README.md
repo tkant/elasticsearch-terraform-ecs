@@ -13,7 +13,7 @@ elasticsearch:
     - ./elasticsearch/es_data:/usr/share/elasticsearch/data
 ```
 
-On AWS I had included terraform code to create:
+For deployment on AWS, I had included terraform code to create:
 1. EFS: Used as a persistent storage for our ElasticSearch Cluster
 2. ECS: Cluster and Task definition
 3. ELB: Internal ELB use with private subnet
@@ -22,7 +22,11 @@ On AWS I had included terraform code to create:
 
 ### Change terraform variables before going ahead
 Look terraform/es/variables.tf
-Change name, image_elasticsearch, vpc_id, etc as per your need. The image name provided is being used by me which is hosted on ECR
+
+Change name, image_elasticsearch, vpc_id, etc as per your need. The image name provided is being used by me which is hosted on ECR. 
+
+## TODO
+_Add more description_
 
 ## Author
 [**Tushar Kant**](http://tusharkant.com) <tushar91delete@gmail.com> 
