@@ -1,0 +1,15 @@
+script.inline: true
+bootstrap.mlockall: true
+network.host: 0.0.0.0
+plugin.mandatory: cloud-aws
+
+network.publish_host: _ec2:privateIp_
+
+indices.fielddata.cache.size: "30%"
+indices.cache.filter.size: "30%"
+
+discovery.type: "ec2"
+discovery.ec2.host_type: "private_ip"
+discovery.ec2.ping_timeout: "10s"
+
+discovery.zen.ping.multicast.enabled: false

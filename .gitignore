@@ -1,0 +1,7 @@
+
+# Compiled files
+*.tfstate
+*.tfstate.backup
+# Local persistent storage
+es_data/*
+terraform/.terraform
